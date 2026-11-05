@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>마인드맵나라 개인정보처리방침 | Privacy Policy</title>
+<meta name="description" content="나라아이티 마인드맵나라 앱 개인정보처리방침 / MindMapNara Privacy Policy">
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --accent:#4493f8; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.6rem; line-height:1.3; margin:0 0 4px; }
+  h2 { font-size:1.1rem; margin:32px 0 8px; }
+  p, li { margin:0 0 8px; }
+  ul { padding-left:20px; margin:0 0 8px; }
+  .meta { color:var(--muted); font-size:.9rem; margin-bottom:24px; }
+  .lang { display:flex; gap:12px; margin-bottom:24px; font-size:.95rem; }
+  a { color:var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:56px 0 40px; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; }
+  td { border:1px solid var(--line); padding:8px 10px; vertical-align:top; }
+  td:first-child { white-space:nowrap; color:var(--muted); width:1%; }
+  code { font-size:.9em; }
+</style>
+</head>
+<body>
+<main>
+
+<nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+<section id="ko">
+  <h1>마인드맵나라 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 11월 4일</p>
+
+  <p>나라아이티(이하 “회사”)는 마인드맵나라 앱(이하 “앱”) 이용자의 개인정보를 중요하게 여기며, 「개인정보 보호법」을 준수합니다.</p>
+
+  <h2>1. 수집하는 개인정보</h2>
+  <p>회사는 회원가입을 받지 않으며, 이용자를 식별할 수 있는 정보를 수집하지 않습니다. 이용자가 만든 마인드맵(주제, 메모, 링크, 태그, 마감일, 첨부 사진)과 설정은 이용자의 기기에만 저장되며 회사 서버로 전송되지 않습니다. 회사는 별도의 서버를 운영하지 않으며, AI 기능에만 Google의 Firebase 서비스를 이용합니다(아래 2항).</p>
+
+  <h2>2. AI 브레인스토밍 (선택 기능)</h2>
+  <p>AI 기능은 이용자가 'AI 확장'이나 'AI로 만들기'를 누를 때만 동작합니다. 두 가지 방식 중 설정에서 고를 수 있습니다.</p>
+  <ul>
+    <li><b>앱 기본 무료 AI(기본값)</b>: 회사의 Google Firebase 프로젝트(Firebase AI Logic)를 거쳐 Google Gemini API로 요청합니다. 회사는 요청 내용을 따로 저장하거나 열람하지 않으며, Google이 회사를 위해 처리합니다. 부정 사용을 막기 위해 Firebase App Check가 앱의 정품 여부를 확인하며, 이때 기기·앱 무결성 정보가 Google(Play Integrity)로 전송됩니다. 기기마다 하루 사용 횟수가 제한되며, 이 횟수는 기기에만 기록됩니다.</li>
+    <li>보내는 내용: 'AI 확장'은 그 주제와 상위 주제 이름·메모, 'AI로 만들기'는 입력한 문장, '글을 맵으로'는 붙여 넣은 글, '사진을 맵으로'는 고른 사진(줄인 사본), 'AI로 글 쓰기'는 맵의 주제와 메모입니다. 사진은 앱에 저장하지 않고 요청이 끝나면 임시 파일을 지웁니다.</li>
+    <li><b>내 Gemini API 키 사용</b>: 이용자가 Google AI Studio에서 무료로 발급한 본인 키로 기기에서 Google에 직접 요청하며, 회사를 거치지 않습니다.</li>
+    <li>AI로 가지를 늘리거나 맵을 만들 때, 해당 주제와 그 상위 주제들, 이미 있는 하위 주제 이름, 그 주제의 메모(최대 1,000자) 또는 이용자가 입력한 요청 문장이 Google(Gemini API)로 전송됩니다. 다른 맵이나 첨부 사진은 보내지 않습니다.</li>
+    <li>전송된 내용은 <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>과 <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Gemini API 추가 서비스 약관</a>을 따릅니다.</li>
+    <li>Gemini API 무료 등급에서는 Google이 전송된 내용을 서비스 개선에 사용할 수 있으며, 사람이 검토할 수도 있습니다. 민감한 개인정보가 담긴 주제나 메모에는 AI 기능을 쓰지 마세요.</li>
+    <li>본인 API 키는 Android 키 저장소로 암호화해 기기에만 보관하며, 백업에 포함하지 않습니다.</li>
+  </ul>
+
+  <h2>2-1. 음성·손글씨 입력, 휴지통·버전 기록</h2>
+  <ul>
+    <li><b>음성 입력</b>: 🎤 버튼을 누르면 기기의 음성 입력 기능(예: Google 앱)이 말을 글자로 바꾸어 앱에 돌려줍니다. 음성은 해당 음성 입력 앱이 처리하며 그 앱의 개인정보처리방침을 따릅니다. 이 앱은 마이크 권한을 요청하지 않고 결과 글자만 받습니다.</li>
+    <li><b>손글씨 입력</b>: 손글씨는 기기 안에서 Google ML Kit으로 글자로 바꾸며, 쓴 글씨는 기기 밖으로 보내지 않습니다. 처음 한 번 Google에서 언어 모델 파일을 내려받습니다.</li>
+    <li><b>휴지통·버전 기록</b>: 지운 마인드맵(30일)과 이전 버전(맵마다 최근 30개)은 기기 안에만 보관합니다.</li>
+  </ul>
+
+  <h2>3. 클라우드 동기화 (선택 기능)</h2>
+  <ul>
+    <li>이용자가 Google Drive 를 고르고 Google 계정을 연결하면, 마인드맵과 첨부 사진을 <strong>이용자 본인 Google Drive 의 앱 전용 공간(appDataFolder)</strong>에 기기에서 직접 저장합니다. 앱은 Drive 의 다른 파일을 읽지 않고, 회사는 이 데이터에 접근할 수 없습니다. 설정에서 언제든 연결을 해제할 수 있고, Google 계정 설정에서 앱 접근 권한을 삭제할 수 있습니다. 저장된 내용은 Google 개인정보처리방침을 따릅니다.</li>
+    <li>이용자가 WebDAV 서버(Nextcloud 등)를 설정하면, 마인드맵 파일이 <strong>이용자가 지정한 서버</strong>로만 전송·저장됩니다. 해당 서버의 처리는 그 서비스의 방침을 따르며, 회사는 이 데이터에 접근할 수 없습니다.</li>
+    <li>WebDAV 비밀번호는 Android 키 저장소로 암호화해 기기에만 보관하며, 백업에 포함하지 않습니다.</li>
+    <li><code>http://</code> 주소를 쓰면 내용과 비밀번호가 암호화되지 않고 전송되므로 <code>https://</code> 주소를 권장합니다.</li>
+    <li>기기 폴더 동기화를 고르면 이용자가 고른 폴더에만 파일을 씁니다.</li>
+  </ul>
+
+  <h2>4. 권한</h2>
+  <ul>
+    <li>알림·정확한 알람: 이용자가 정한 마감일 알림을 보낼 때만 사용합니다. 알림은 기기 안에서 예약됩니다.</li>
+    <li>부팅 완료 수신: 기기를 다시 켠 뒤 마감일 알림을 다시 예약하는 데만 사용합니다.</li>
+    <li>인터넷: AI 기능, Google Drive·WebDAV 동기화, 손글씨 언어 모델 내려받기, 결제 확인에만 사용합니다.</li>
+    <li>사진 첨부: 사진 선택기나 카메라 앱으로 이용자가 고르거나 찍은 사진만 앱으로 가져오며, 사진 전체에 접근하는 권한은 요청하지 않습니다.</li>
+  </ul>
+
+  <h2>5. 유료 이용권 및 결제</h2>
+  <p>앱은 설치 후 7일 동안 무료로 체험할 수 있으며, 이후에는 인앱 상품(평생 이용권)을 구매해야 계속 이용할 수 있습니다.</p>
+  <ul>
+    <li>결제는 Google Play가 처리하며, 회사는 카드번호·계좌 등 결제수단 정보를 받거나 보관하지 않습니다. 결제 과정에서 Google이 처리하는 정보는 <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>을 따릅니다.</li>
+    <li>앱은 이용권 보유 여부를 확인하기 위해 Google Play로부터 구매 정보(상품 ID, 구매 상태, 구매 토큰)를 기기에서 조회합니다. 이 정보와 체험 시작일은 기기에만 저장되며 회사 서버로 전송되지 않습니다.</li>
+    <li>환불은 <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">Google Play 환불 정책</a>을 따릅니다.</li>
+  </ul>
+
+  <h2>6. 공유, 내보내기, 백업 파일</h2>
+  <ul>
+    <li>텍스트·이미지(PNG)·PDF·OPML·Markdown으로 공유하거나 내보내기는 이용자가 직접 실행할 때만 이루어지며, 이용자가 고른 앱이나 위치로만 전달됩니다.</li>
+    <li>암호화 백업 파일은 이용자가 정한 비밀번호로 AES-256 암호화되며, 회사는 비밀번호를 알 수 없고 복구할 수도 없습니다.</li>
+  </ul>
+
+  <h2>7. 기기 백업</h2>
+  <p>이용자가 기기의 Google 백업을 켜 둔 경우, 앱의 마인드맵, 첨부 사진, 설정, 체험·구매 상태는 이용자 본인의 Google 계정에 백업될 수 있으며, 회사는 이 데이터에 접근할 수 없습니다. 암호화해 둔 API 키와 비밀번호는 백업에서 제외됩니다.</p>
+
+  <h2>8. 제3자 제공 및 보관</h2>
+  <p>회사는 개인정보를 제3자에게 제공하거나 판매하지 않습니다. 위 2·3항의 전송은 이용자가 해당 기능을 직접 사용하거나 설정한 경우에만 이루어집니다. AI 요청 처리는 Google에 위탁합니다. 기기에 저장된 데이터는 앱 안에서 삭제하거나 앱을 삭제하면 함께 삭제됩니다.</p>
+
+  <h2>9. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>10. 개인정보 보호책임자</h2>
+  <table>
+    <tr><td>상호</td><td>나라아이티</td></tr>
+    <tr><td>성명</td><td>Junwoo Lee</td></tr>
+    <tr><td>이메일</td><td><a href="mailto:narait@narait.cc">narait@narait.cc</a></td></tr>
+    <tr><td>사업자등록번호</td><td>222-28-02048</td></tr>
+  </table>
+
+  <h2>11. 변경 고지</h2>
+  <p>이 방침이 변경되면 이 페이지를 통해 고지합니다.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+  <h1>MindMapNara Privacy Policy</h1>
+  <p class="meta">Effective date: November 4, 2026</p>
+
+  <p>NARAIT (“we”) respects the privacy of users of the MindMapNara app (마인드맵나라, the “App”).</p>
+
+  <h2>1. Information we collect</h2>
+  <p>The App has no sign-up and we do not collect information that identifies you. The mind maps you create (topics, notes, links, tags, due dates, attached photos) and your settings are stored only on your device and are never sent to our servers. We do not operate any servers of our own; Google Firebase is used only for AI features (section 2).</p>
+
+  <h2>2. AI brainstorming (optional)</h2>
+  <p>AI features run only when you tap "AI expand", "Create with AI", "Text to map", "Photo to map" or "Write with AI". You can choose one of two modes in Settings.</p>
+  <ul>
+    <li><b>Built-in free AI (default)</b>: requests go through our Google Firebase project (Firebase AI Logic) to the Google Gemini API. We do not store or view request content; Google processes it on our behalf. To prevent abuse, Firebase App Check verifies that the App is genuine, which sends device and app integrity information to Google (Play Integrity). Daily use is limited per device, and the count is kept only on your device.</li>
+    <li>What is sent: for AI expand, the topic and its parent topics' names and notes; for Create with AI, the sentence you typed; for Text to map, the text you pasted; for Photo to map, the photo you chose (a reduced copy); for Write with AI, the map's topics and notes. Photos are not stored by the App, and temporary files are deleted after the request.</li>
+    <li><b>Use my Gemini API key</b>: requests go directly from your device to Google using your own key (free from Google AI Studio) and never pass through us.</li>
+    <li>When you expand a topic or generate a map with AI, the topic, its parent topics, the names of its existing sub-topics, its note (up to 1,000 characters) or the request you typed are sent to Google (Gemini API). Other maps and attached photos are not sent.</li>
+    <li>What is sent is governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Gemini API Additional Terms of Service</a>.</li>
+    <li>On the free Gemini API tier, Google may use what is sent to improve its services, and it may be reviewed by humans. Do not use AI features on topics or notes containing sensitive personal information.</li>
+    <li>Your own API key is encrypted with the Android Keystore, kept only on your device and excluded from backups.</li>
+  </ul>
+
+  <h2>2-1. Voice and handwriting input, trash and version history</h2>
+  <ul>
+    <li><b>Voice input</b>: when you tap 🎤, your device's speech input (e.g. the Google app) converts speech to text and returns the text to the App. Speech is processed by that speech app under its own privacy policy. The App does not request microphone permission and only receives the resulting text.</li>
+    <li><b>Handwriting input</b>: handwriting is recognized on the device with Google ML Kit and is not sent off the device. A language model file is downloaded from Google once.</li>
+    <li><b>Trash and version history</b>: deleted maps (30 days) and previous versions (latest 30 per map) are kept only on your device.</li>
+  </ul>
+
+  <h2>3. Cloud sync (optional)</h2>
+  <ul>
+    <li>If you choose Google Drive and connect your Google account, mind maps and attached photos are stored directly from your device in <strong>the app-only area (appDataFolder) of your own Google Drive</strong>. The App does not read your other Drive files, and we cannot access this data. You can disconnect in Settings at any time and remove the App's access in your Google Account settings. Stored content is governed by the Google Privacy Policy.</li>
+    <li>If you set up a WebDAV server (Nextcloud, etc.), your mind map files are sent to and stored <strong>only on the server you specify</strong>. That service’s policy applies, and we cannot access this data.</li>
+    <li>Your WebDAV password is encrypted with the Android Keystore, kept only on your device and excluded from backups.</li>
+    <li>With an <code>http://</code> address, content and password are sent unencrypted; we recommend <code>https://</code>.</li>
+    <li>If you choose device-folder sync, files are written only to the folder you pick.</li>
+  </ul>
+
+  <h2>4. Permissions</h2>
+  <ul>
+    <li>Notifications and exact alarms: used only to deliver the due-date reminders you set. Reminders are scheduled on the device.</li>
+    <li>Boot completed: used only to reschedule reminders after the device restarts.</li>
+    <li>Internet: used only for AI features, Google Drive and WebDAV sync, downloading the handwriting language model, and purchase checks.</li>
+    <li>Photo attachments: only photos you pick with the system photo picker or take with the camera app are brought into the App. No permission to access all your photos is requested.</li>
+  </ul>
+
+  <h2>5. Paid license and payments</h2>
+  <p>The App can be used free of charge for 7 days after installation. After that, an in-app product (lifetime license) must be purchased to keep using it.</p>
+  <ul>
+    <li>Payments are processed by Google Play. We never receive or store payment details such as card or bank account numbers. Information Google processes during payment is governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+    <li>To check whether you own the license, the App queries Google Play on your device for purchase information (product ID, purchase state and purchase token). This information and the trial start date are stored only on your device and are never sent to our servers.</li>
+    <li>Refunds are handled under the <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">Google Play refund policy</a>.</li>
+  </ul>
+
+  <h2>6. Sharing, export and backup files</h2>
+  <ul>
+    <li>Sharing or exporting (text, PNG image, PDF, OPML, Markdown) happens only when you start it, and data goes only to the app or location you choose.</li>
+    <li>Encrypted backup files are protected with AES-256 using a password you set. We do not know the password and cannot recover it.</li>
+  </ul>
+
+  <h2>7. Device backup</h2>
+  <p>If Google backup is turned on for your device, the App’s mind maps, attached photos, settings and trial/purchase status may be backed up to your own Google account. We cannot access this data. Encrypted API keys and passwords are excluded from backups.</p>
+
+  <h2>8. Third parties and retention</h2>
+  <p>We do not provide or sell personal information to third parties. The transfers in sections 2 and 3 happen only when you use or set up those features. AI request processing is entrusted to Google. Data stored on your device is deleted when you delete it in the App or uninstall the App.</p>
+
+  <h2>9. Children</h2>
+  <p>The App is not directed at children under 14 and does not knowingly collect their personal information.</p>
+
+  <h2>10. Contact</h2>
+  <table>
+    <tr><td>Company</td><td>NARAIT (나라아이티)</td></tr>
+    <tr><td>Name</td><td>Junwoo Lee</td></tr>
+    <tr><td>Email</td><td><a href="mailto:narait@narait.cc">narait@narait.cc</a></td></tr>
+    <tr><td>Business reg. no.</td><td>222-28-02048</td></tr>
+  </table>
+
+  <h2>11. Changes</h2>
+  <p>If this policy changes, we will post the update on this page.</p>
+</section>
+
+</main>
+</body>
+</html>
