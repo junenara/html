@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>시크릿 다이어리 개인정보처리방침</title>
+<style>
+  :root { --ink:#2b2633; --sub:#6b6478; --accent:#5b3fa8; --bg:#fbf8ff; --card:#ffffff; --line:#e6def7; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#ece7f5; --sub:#b4aac6; --accent:#c7b6ff; --bg:#16131c; --card:#221e2a; --line:#352f42; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,"Malgun Gothic","Noto Sans KR",sans-serif; line-height:1.7; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { color:var(--accent); font-size:1.6rem; margin-bottom:4px; }
+  h2 { font-size:1.15rem; margin-top:32px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  .sub { color:var(--sub); font-size:.9rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:14px 0; }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; }
+  th, td { border-bottom:1px solid var(--line); padding:8px 6px; text-align:left; vertical-align:top; }
+  th { color:var(--sub); font-weight:600; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>시크릿 다이어리 개인정보처리방침</h1>
+<p class="sub">앱: 시크릿 다이어리 (cc.narait.diarynara) · 만든 곳: NaraIT · 시행일: 2026년 11월 21일</p>
+
+<div class="card">
+<strong>요약</strong> — 시크릿 다이어리는 회원 가입이 없고, 일기·사진·음성 메모를 <strong>우리 서버로 보내지 않습니다</strong>.
+모든 기록은 사용자의 휴대폰 안에 암호화(SQLCipher, AES-GCM)되어 저장됩니다. 광고와 사용자 추적 분석을 넣지 않았습니다.
+</div>
+
+<h2>1. 기기 안에만 저장하는 정보</h2>
+<p>다음 정보는 사용자가 직접 입력하거나 허용한 경우에만 만들어지며, 휴대폰 안의 암호화된 저장소에만 있습니다. 개발자는 이 정보를 볼 수 없습니다.</p>
+<ul>
+  <li>일기·순간 기록(글, 기분, 감정 단어, 활동, 태그), 미래의 나에게 쓴 편지, 습관 체크</li>
+  <li>사진·손그림·음성 메모 (앱 폴더 안에 암호화해 복사)</li>
+  <li>앱 잠금 PIN (원문이 아닌 해시값), PIN 복구 키 (해시값)과 복구 이메일 주소</li>
+</ul>
+<p>앱의 자동 백업(Android 백업)은 꺼져 있습니다. 사용자가 직접 만드는 백업 파일은 사용자가 정한 비밀번호로 암호화되며, 사용자가 고른 장소(예: 휴대폰 폴더, 클라우드 드라이브 폴더)에 저장됩니다.</p>
+
+<h2>2. 선택 기능과 권한</h2>
+<p>아래 기능은 모두 <strong>기본으로 꺼져 있고</strong>, 사용자가 설정에서 켜고 권한을 허용할 때만 동작합니다. 언제든 설정이나 휴대폰의 권한 화면에서 끌 수 있습니다.</p>
+<table>
+<tr><th>기능</th><th>쓰는 정보·권한</th><th>어디로 가나요</th></tr>
+<tr><td>날씨 자동 기록</td><td>대략적인 위치(ACCESS_COARSE_LOCATION)</td><td>좌표를 소수점 한 자리(약 10km)로 줄여 날씨 서비스 <a href="https://open-meteo.com">Open-Meteo</a>에 보내 현재 날씨만 받아 옵니다. 위치는 저장하지 않고 날씨 이모지와 기온만 기록합니다. 일기 내용은 보내지 않습니다.</td></tr>
+<tr><td>일정 요약</td><td>캘린더 읽기(READ_CALENDAR)</td><td>그날 일정 제목만 기기 안에서 읽어 하루 화면에 보여 줍니다. 밖으로 보내지 않습니다.</td></tr>
+<tr><td>음성 메모</td><td>마이크(RECORD_AUDIO)</td><td>녹음은 기기 안에 암호화해 저장하고, 글로 옮기기는 기기 안의 음성 인식으로만 합니다.</td></tr>
+<tr><td>오늘 찍은 사진 제안</td><td>사진 읽기(READ_MEDIA_IMAGES)</td><td>그날 찍은 사진을 기기 안에서만 찾아 보여 주고, 고른 사진만 앱 안으로 암호화해 복사합니다.</td></tr>
+<tr><td>알림</td><td>알림(POST_NOTIFICATIONS)</td><td>일기 알림, 순간 기록 알림, 편지 도착 알림을 보여 줍니다.</td></tr>
+<tr><td>지문·얼굴로 열기</td><td>생체 인증(USE_BIOMETRIC)</td><td>휴대폰의 생체 인증 결과(성공/실패)만 받으며, 생체 정보 자체는 앱이 받지 않습니다.</td></tr>
+<tr><td>AI 초안</td><td>기기 안 AI(Gemini Nano, 지원 기기만)</td><td>하루 마무리 초안을 기기 안에서만 만듭니다.</td></tr>
+<tr><td>PIN 복구 이메일</td><td>사용자가 입력한 이메일</td><td>복구 키를 사용자의 메일 앱으로 보낼 수 있게 채워 줄 뿐, 앱이 직접 메일을 보내거나 개발자에게 보내지 않습니다.</td></tr>
+</table>
+
+<h2>3. 제3자 서비스</h2>
+<ul>
+  <li><strong>Google Play 결제</strong>: PRO 구매는 Google Play 를 통해 처리됩니다. 결제 정보는 Google 이 관리하며 앱은 구매 여부만 확인합니다. (<a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>)</li>
+  <li><strong>Google ML Kit</strong>: 기기 안 AI 초안 기능은 Google ML Kit 를 사용합니다. ML Kit 는 기능 동작·성능 측정을 위한 진단 정보(일기 내용 제외)를 Google 에 보낼 수 있습니다. (<a href="https://developers.google.com/ml-kit/terms">ML Kit 약관</a>)</li>
+  <li><strong>Open-Meteo</strong>: 날씨 자동 기록을 켠 경우에만, 대략적인 좌표로 날씨를 조회합니다. (<a href="https://open-meteo.com/en/terms">Open-Meteo 약관</a>)</li>
+</ul>
+
+<h2>4. 보관과 삭제</h2>
+<ul>
+  <li>지운 일기는 휴지통에 30일 보관한 뒤 자동으로 완전히 지웁니다.</li>
+  <li>앱을 삭제하면 기기 안의 모든 일기와 암호화 키가 함께 지워지며 되살릴 수 없습니다. 미리 백업 파일을 만들어 두세요.</li>
+  <li>개발자는 사용자 데이터를 가지고 있지 않으므로, 삭제 요청은 앱 삭제나 앱 안의 지우기 기능으로 바로 처리됩니다.</li>
+</ul>
+
+<h2>5. 아동</h2>
+<p>이 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 따로 수집하지 않습니다.</p>
+
+<h2>6. 바뀌는 경우</h2>
+<p>이 방침이 바뀌면 이 페이지에 시행일과 함께 알립니다.</p>
+
+<h2>7. 문의</h2>
+<p>NaraIT · <a href="https://www.narait.cc">https://www.narait.cc</a></p>
+
+<hr>
+<h2>English summary</h2>
+<p>Secret Diary has no account and no server. Diaries, photos, drawings and voice memos stay on your phone, encrypted (SQLCipher, AES-GCM). No ads, no tracking analytics.
+Optional features (off by default): weather (coarse location, rounded to ~10 km, sent to Open-Meteo; location is not stored), calendar titles (read on device only), microphone (recorded and transcribed on device), photos from today (scanned on device). Purchases are handled by Google Play.
+Google ML Kit may send diagnostic data (not your diary). Uninstalling the app deletes all data. Contact: https://www.narait.cc</p>
+</main>
+</body>
+</html>
